@@ -1,24 +1,23 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-
 /*
-Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+*Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
 
-Note: The solution set must not contain duplicate triplets.
+*Note: The solution set must not contain duplicate triplets.
 
-For example, given array S = [-1, 0, 1, 2, -1, -4],
+*For example, given array S = [-1, 0, 1, 2, -1, -4],
 
 A solution set is:
 [
   [-1, 0, 1],
   [-1, -1, 2]
 ]
- */
+*/
 
 
-/**
+/*
  * 3sum 题，先对数组排序，然后用双层循环遍历。 从第一个数开始，跳过重复的数，对剩下数进行2sum查找；O(N*N)
  */
+
+import java.util.*;
 public class Solution{
     public List<List<Integer>> threesum(int[] nums){
         Arrays.sort(nums);

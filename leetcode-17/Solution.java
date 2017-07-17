@@ -14,9 +14,10 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
  * DFS方法，注意理清整个代码运行的流程以及递归过程
  */
 
+import java.util.*;
 public class Solution {
     public List<String> letterCombinations(String digits) {
-        HashMap<String,String>() map = new HashMap<String,String>();
+        HashMap<Character,String> map = new HashMap<Character,String>();
         
         map.put('0'," ");
         map.put('1',"");
@@ -33,7 +34,7 @@ public class Solution {
         helper(digits,map,res,sb,0);
         return res;
     }
-    public void helper(String digits,HashMap<String,String>() map,List<String> res,StringBuilder sb,int i){
+    public void helper(String digits,HashMap<Character,String> map,List<String> res,StringBuilder sb,int i){
         if(i> digits.length()-1){
             if(sb.length()!=0)
             res.add(sb.toString());
