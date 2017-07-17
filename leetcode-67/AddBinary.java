@@ -6,6 +6,10 @@ a = "11"
 b = "1"
 Return "100".
  */
+
+/**
+ * 字符串遍历，二进制计算考察
+ */
 import java.util.*;
 public class AddBinary {
     public String solution(String a, String b) {
