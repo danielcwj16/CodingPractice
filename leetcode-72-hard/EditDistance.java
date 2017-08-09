@@ -47,8 +47,7 @@ public class EditDistance {
             for(int j=1;j<word2.length();j++){
                 char c2 = word2.charAt(j-1);
                 if(c1 == c2){
-                    dp[i][j] = dp[i-1][j-1];
-                    
+                    dp[i][j] = dp[i-1][j-1];                  
                 }else{
                     int replace = dp[i-1][j-1] +1;
                     int insert = dp[i-1][j] +1;
@@ -56,7 +55,7 @@ public class EditDistance {
 
                     int min = Math.min(replace,insert);
                     min = Math.min(min,delete);
-                    d[i][j] = min;
+                    dp[i][j] = min;
                 }
             }
         }
