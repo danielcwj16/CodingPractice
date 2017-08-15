@@ -1,8 +1,8 @@
 /**
  * 类比在unsorted array中找第K大的数
  */
-
-public class Solution {
+import java.util.*;
+public class MedianofTwoSortedArrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int m = nums1.length;
         int n = nums2.length;

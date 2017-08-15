@@ -1,0 +1,30 @@
+Feature
+
+1.sotre a few TB of data in sotrage
+2. remove entries when adding new entries if there is not enough space
+3. return query result when the entry is in cache
+4.query database when entry is not in cache and save return in cache
+
+	3 types of access pattern for given cache
+		a. write through cache
+		b. write around cache
+		c. write back cache
+		
+
+		
+Estimation: (QPS) Queries per second and data size need to handle
+
+Goal: Latency
+	  Consistency
+	  Availability
+	  
+	  prioritize the parameters and compromise
+	 
+	 
+Deep dive:
+	How would a LRU cache work on a single machine single threaded?
+	What kind of data structure to use to implement LRU cache
+	How to scale it ( sharding)
+	
+
+
