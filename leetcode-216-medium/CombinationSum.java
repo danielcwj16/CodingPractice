@@ -41,7 +41,7 @@ import java.util.*;
         
         for(int i = left;i<=9;i++){
             com.add(i);
-            helper(k-1,n-i,res,com,i);
+            helper(k-1,n-i,res,com,i+1);
             com.remove(com.size()-1);
         }
         
